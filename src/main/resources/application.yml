@@ -1,0 +1,20 @@
+#配置项目端口号
+server:
+  port: 8080
+
+
+spring:
+  #数据库配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/monkey-blog?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+  #模板引擎
+  thymeleaf:
+    encoding: utf-8
+
+#mybatis配置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  config-location: classpath:mybatis-config.xml
+  type-aliases-package: com.ws.monkeyblog
